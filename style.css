@@ -28,3 +28,48 @@ body {
   list-style: none;
   text-decoration: none;
 }
+
+.kategori-liste {
+  justify-content: space-around;
+  justify-content: center;
+}
+
+.kategori-liste a {
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  letter-spacing: 0.5cqw;
+  justify-content: space-around;
+  justify-content: center;
+}
+
+.accesories {
+  background-color: rgb(254, 197, 249);
+  padding: 10px;
+  margin: 10px;
+}
+
+.bluser {
+  background-color: rgb(254, 197, 249);
+  margin: 10px;
+}
+
+.t-shirts {
+  background-color: rgb(254, 197, 249);
+  margin: 10px;
+}
+
+.bukser {
+  background-color: rgb(254, 197, 249);
+  margin: 10px;
+}
+
+.shorts {
+  background-color: rgb(254, 197, 249);
+  margin: 10px;
+}
+
+.kjoler {
+  background-color: rgb(254, 197, 249);
+  margin: 10px;
+}
