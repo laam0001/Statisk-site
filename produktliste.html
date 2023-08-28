@@ -14,7 +14,9 @@
     </header>
 
     <main>
-      <div class="grid_1-1-1">
+      <div class="grid"></div>
+
+      <template id="produktTemplate">
         <article class="produkt">
           <a href="produkt.html">
             <img
@@ -22,9 +24,33 @@
               alt="Sort Puma Rygsæk"
           /></a>
           <h3>PUMA RYGSÆK</h3>
+          <p class="gender"></p>
+          <p class="season"></p>
+          <p class="price"></p>
+          <p class="brandname"></p>
         </article>
+      </template>
+    </main>
+    <!--
+  /*
+{
+  "id": 1163,
+  "gender": "Men",
+  "category": "Apparel",
+  "subcategory": "Topwear",
+  "articletype": "Tshirts",
+  "season": "Summer",
+  "productionyear": 2011,
+  "usagetype": "Sports",
+  "productdisplayname": "Sahara Team India Fanwear Round Neck Jersey",
+  "price": 895,
+  "discount": null,
+  "brandname": "Nike",
+  "soldout": 0
+}
+*/
 
-        <article class="produkt soldOut">
+        <article class="produkt soldout">
           <a href="produkt.html">
             <img
               src="https://kea-alt-del.dk/t7/images/webp/640/1550.webp"
@@ -32,7 +58,7 @@
           /></a>
 
           <h3>PUMA FODBOLD</h3>
-          <div class="soldoutbox">
+          <div class="soldout">
             <h2>SOLD OUT</h2>
           </div>
         </article>
@@ -44,7 +70,7 @@
               alt="Løbebukser"
           /></a>
           <h3>LØBEBUKSER</h3>
-          <div class="salesBox">
+          <div class="sale">
             <h2>SALE</h2>
           </div>
         </article>
@@ -59,6 +85,7 @@
         </article>
       </div>
     </main>
+  -->
     <script src="./js/productlist.js"></script>
   </body>
 </html>

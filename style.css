@@ -94,49 +94,31 @@ body {
   margin-bottom: 10px;
 }
 
-.grid_1-1-1 {
+.grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  z-index: -1;
 }
 
 .produkt {
   max-width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  margin-right: 500px;
   padding: 10px;
-  z-index: -1;
+  margin: 10px;
 }
 
-.produkt h3 {
-  margin-top: 880px;
-  margin-left: -640px;
-}
-
-.grid_1-1-1 a {
-  color: black;
-  text-align: center;
-  font-size: 25px;
-  text-decoration: none;
-  list-style: none;
-  letter-spacing: 0.2cqw;
-}
-
-.soldoutbox {
-  display: flex;
+.soldout {
   background-color: rgb(255, 57, 57);
   color: aliceblue;
-  margin-bottom: 1000px;
-  margin-left: -215px;
+  margin-bottom: 0px;
+  margin-left: 0px;
   padding: 10px;
-  z-index: 1;
 }
 
-.salesBox {
+.sale {
   background-color: rgb(255, 57, 173);
   color: aliceblue;
-  margin-bottom: 65px;
-  margin-left: -80px;
+  margin-bottom: 0px;
+  margin-left: 0px;
   padding: 10px;
   z-index: 1;
 }
