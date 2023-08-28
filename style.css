@@ -99,16 +99,18 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 
-.produkt1,
-.produkt2,
-.produkt3,
-.produkt4 {
+.produkt {
   max-width: 100%;
-  height: auto;
   display: flex;
-  padding: 40px;
-  justify-content: space-around;
-  text-align: center;
+  justify-content: space-evenly;
+  margin-right: 500px;
+  padding: 10px;
+  z-index: -1;
+}
+
+.produkt h3 {
+  margin-top: 880px;
+  margin-left: -640px;
 }
 
 .grid_1-1-1 a {
@@ -120,34 +122,22 @@ body {
   letter-spacing: 0.2cqw;
 }
 
-.produkt2 img {
-  opacity: 60%;
-  filter: blur(0.9px) grayscale(100%);
-  z-index: -1;
-}
-
-.produkt3 {
-  z-index: -1;
-}
-.sold-out {
+.soldoutbox {
+  display: flex;
   background-color: rgb(255, 57, 57);
   color: aliceblue;
+  margin-bottom: 1000px;
+  margin-left: -215px;
   padding: 10px;
-  margin-bottom: 0px;
-  margin-top: -1894px;
-  margin-left: 779px;
-  margin-right: 540px;
   z-index: 1;
 }
 
-.sale {
+.salesBox {
   background-color: rgb(255, 57, 173);
   color: aliceblue;
+  margin-bottom: 65px;
+  margin-left: -80px;
   padding: 10px;
-  margin-bottom: 0px;
-  margin-top: 878px;
-  margin-left: 46px;
-  margin-right: 1330px;
   z-index: 1;
 }
 
