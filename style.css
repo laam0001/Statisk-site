@@ -96,25 +96,32 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 2rem;
   z-index: -1;
+  gap: 1rem;
+}
+
+.grid img {
+  width: 100%;
 }
 
 .produkt {
-  max-width: 100%;
-  padding: 10px;
-  margin: 10px;
+  position: relative;
 }
 
-.soldout {
+.soldoutbox {
+  position: absolute;
   background-color: rgb(255, 57, 57);
   color: aliceblue;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   margin-left: 0px;
   padding: 10px;
+  z-index: 1;
 }
 
-.sale {
+.salebox {
+  position: absolute;
   background-color: rgb(255, 57, 173);
   color: aliceblue;
   margin-bottom: 0px;
