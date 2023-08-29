@@ -1,4 +1,4 @@
-fetch("https://kea-alt-del.dk/t7/api/products?limit=15")
+fetch("https://kea-alt-del.dk/t7/api/products?limit=12")
   .then((res) => res.json())
   .then(showProducts);
 
@@ -19,7 +19,7 @@ function showProduct(product) {
   copy.querySelector("p.season").textContent = product.season;
   copy.querySelector("p.price").textContent = product.price;
   copy.querySelector("p.brandname").textContent = product.brandname;
-  copy.querySelector("p.sale").textContent = product.discount;
+  copy.querySelector("div.sale").textContent = product.discount;
   copy.querySelector(
     "img"
   ).src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
@@ -28,6 +28,10 @@ function showProduct(product) {
   if (product.soldout) {
     copy.querySelector("article").classList.add("soldout");
   }
+
+  copy
+    .querySelector(".read-more")
+    .setAttribute("href", `produkt.html?id=${product.id}`);
 
   //appende
   document.querySelector(".grid").appendChild(copy);

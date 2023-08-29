@@ -112,28 +112,32 @@ body {
 
 .soldoutbox {
   position: absolute;
-  background-color: rgb(255, 57, 57);
-  color: aliceblue;
-  margin-bottom: 20px;
-  margin-left: 0px;
-  padding: 10px;
-  z-index: 1;
-}
-
-.salebox {
-  position: absolute;
-  background-color: rgb(255, 57, 173);
+  background-color: rgb(109, 109, 109);
   color: aliceblue;
   margin-bottom: 0px;
   margin-left: 0px;
   padding: 10px;
-  z-index: 1;
+  z-index: 0;
+}
+
+.sale {
+  position: absolute;
+  background-color: rgb(255, 57, 173);
+  color: aliceblue;
+  margin-top: -625px;
+  margin-left: 0px;
+  padding: 10px;
 }
 
 .skuldertaske {
   max-width: 100%;
   margin-left: 40px;
   margin-bottom: 10px;
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .om-boks {
