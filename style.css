@@ -9,22 +9,30 @@ body {
   display: flex;
 }
 
-.Fashion a {
-  color: rgb(234, 37, 211);
-  font-weight: bold;
-  list-style: none;
-  text-decoration: none;
+.kategori {
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(231, 231, 231);
+  padding: 20px;
+  margin: -10px;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.kategori {
-  padding: 15px;
-  margin: 20px;
+.kategori a:visited {
+  color: rgb(0, 0, 0);
 }
 
 .kategori a {
-  font-size: 20px;
+  list-style: none;
+  text-decoration: none;
+  margin-right: 40px;
+  margin-top: 0px;
+}
+
+.Fashion a {
+  color: rgb(234, 37, 211);
   font-weight: bold;
-  color: rgb(0, 0, 0);
   list-style: none;
   text-decoration: none;
 }
@@ -43,55 +51,18 @@ body {
   letter-spacing: 0.5cqw;
 }
 
+.letterGroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .accesories {
   display: flex;
   padding: 10px;
   margin-left: 40px;
   margin-right: 1170px;
   margin-bottom: 10px;
-}
-
-.bluser {
-  display: flex;
-  padding: 10px;
-  margin-top: -50px;
-  margin-left: 500px;
-  margin-right: 630px;
-  margin-bottom: 10px;
-}
-
-.t-shirts {
-  display: flex;
-  padding: 10px;
-  margin-left: 40px;
-  margin-right: 1220px;
-  margin-bottom: 10px;
-}
-
-.bukser {
-  display: flex;
-  padding: 10px;
-  margin-top: -50px;
-  margin-left: 500px;
-  margin-right: 790px;
-  margin-bottom: 10px;
-}
-
-.shorts {
-  display: flex;
-  padding: 10px;
-  margin-left: 40px;
-  margin-right: 1250px;
-  margin-bottom: 10px;
-}
-
-.kjoler {
-  display: flex;
-  padding: 10px;
-  margin-top: -50px;
-  margin-left: 500px;
-  margin-right: 790px;
-  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .grid {
@@ -108,16 +79,27 @@ body {
 
 .produkt {
   position: relative;
+  text-transform: uppercase;
 }
 
-.soldoutbox {
+.hide {
+  display: none;
+}
+.soldout img {
+  opacity: 60%;
+  filter: blur(0.7px);
+}
+
+.soldoutText {
   position: absolute;
-  background-color: rgb(109, 109, 109);
-  color: aliceblue;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  padding: 10px;
-  z-index: 0;
+  top: 200px;
+  left: 150px;
+  font-size: 30px;
+  color: black;
+}
+
+.produkt.soldout > .soldoutText {
+  display: block;
 }
 
 .sale {
